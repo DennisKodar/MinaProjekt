@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Övning_3._2
+namespace Övning_12._1
 {
     public partial class Form1 : Form
     {
@@ -17,14 +17,9 @@ namespace Övning_3._2
             InitializeComponent();
         }
 
-        private void btnKör_Click(object sender, EventArgs e)
+        private void btnSortera_Click(object sender, EventArgs e)
         {
-            int tal = int.Parse(tbxTal1.Text);
-            int tal2 = int.Parse(tbxTal2.Text);
-            int summa = tal + tal2;
-            string text = summa.ToString();
 
-            lblSumma.Text = text;
         }
     }
 }

@@ -7,8 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.XPath;
 
-namespace Övning_3._2
+namespace Övning_3._9
 {
     public partial class Form1 : Form
     {
@@ -17,14 +18,12 @@ namespace Övning_3._2
             InitializeComponent();
         }
 
-        private void btnKör_Click(object sender, EventArgs e)
+        private void btnFlytta_Click(object sender, EventArgs e)
         {
-            int tal = int.Parse(tbxTal1.Text);
-            int tal2 = int.Parse(tbxTal2.Text);
-            int summa = tal + tal2;
-            string text = summa.ToString();
-
-            lblSumma.Text = text;
+            int x = int.Parse(tbxX.Text);
+            int y = int.Parse(tbxY.Text);
+            Point Position = new Point(x, y);
+            btnFlytta.Location = Position;
         }
     }
 }

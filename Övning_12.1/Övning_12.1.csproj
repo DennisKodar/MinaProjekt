@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{00E6EE09-64D3-47BA-89DF-709BAF01A7E6}</ProjectGuid>
+    <ProjectGuid>{00A07507-8E16-4B2A-9081-1BC47762AED6}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Övning_10._7</RootNamespace>
-    <AssemblyName>Övning_10.7</AssemblyName>
+    <RootNamespace>Övning_12._1</RootNamespace>
+    <AssemblyName>Övning_12.1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DiceBag.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

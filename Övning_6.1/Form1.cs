@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Övning_3._2
+namespace Övning_6._1
 {
     public partial class Form1 : Form
     {
@@ -17,14 +17,17 @@ namespace Övning_3._2
             InitializeComponent();
         }
 
-        private void btnKör_Click(object sender, EventArgs e)
+        private void btnBeräkna_Click(object sender, EventArgs e)
         {
-            int tal = int.Parse(tbxTal1.Text);
+            int tal1 = int.Parse(tbxTal1.Text);
             int tal2 = int.Parse(tbxTal2.Text);
-            int summa = tal + tal2;
-            string text = summa.ToString();
+            int tal3 = int.Parse(tbxTal3.Text);
+            tal1 *= 2;
+            tal2 *= 3;
+            tal3 *= 4;
+            int sumtot = tal1 + tal2 + tal3;
+            lblSvar.Text = "Svar: " + sumtot;
 
-            lblSumma.Text = text;
         }
     }
 }

@@ -32,6 +32,13 @@ namespace Övning_10._7
                 int antalPrickar = slump.Next(1, 7);
                 tärningar[i] = antalPrickar;
             }
+
+            DiceBag db = new DiceBag();
+            db.NoOfD6 = 4;
+            db.NoOfD10 = 7;
+            int result = db.RollDice();
+
+
         }
         void visaTärningar()
         {
