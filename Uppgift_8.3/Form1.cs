@@ -14,7 +14,8 @@ namespace Uppgift_8._3
     {
         int nrDatorVinster;
         int nrSpelarVinster;
-        
+        int omgång;
+
         public Form1()
         {
             InitializeComponent();
@@ -91,10 +92,13 @@ namespace Uppgift_8._3
             //avgör vinst
             if (nrDatorVinster > 2 || nrSpelarVinster > 2)
             {
+                ++omgång;
                 gbxStenSaxPåse.Enabled = false;
                 btnSpela.Enabled = true;
-                tbxMinaResultat.AppendText("Dator: " + nrDatorVinster +
+                tbxMinaResultat.AppendText("Omgång "+ omgång +"\r\n" + "Dator: " + nrDatorVinster +
                                  "  Spelare: " + nrSpelarVinster + "\r\n");
+                nrDatorVinster = 0;
+                nrSpelarVinster = 0;
             }
 
         }

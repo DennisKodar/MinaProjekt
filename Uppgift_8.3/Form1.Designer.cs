@@ -170,7 +170,7 @@
             this.Controls.Add(this.gbxMinaResultat);
             this.Controls.Add(this.gbxStenSaxPåse);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "X";
             this.gbxStenSaxPåse.ResumeLayout(false);
             this.gbxStenSaxPåse.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPåse)).EndInit();
