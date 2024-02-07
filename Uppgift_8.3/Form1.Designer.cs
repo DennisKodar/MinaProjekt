@@ -28,11 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.gbxStenSaxPåse = new System.Windows.Forms.GroupBox();
-            this.pbxPåse = new System.Windows.Forms.PictureBox();
-            this.pbxSax = new System.Windows.Forms.PictureBox();
-            this.pbxSten = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblDatornsVal = new System.Windows.Forms.Label();
@@ -40,11 +36,14 @@
             this.gbxMinaResultat = new System.Windows.Forms.GroupBox();
             this.tbxMinaResultat = new System.Windows.Forms.TextBox();
             this.btnSpela = new System.Windows.Forms.Button();
+            this.pbxPåse = new System.Windows.Forms.PictureBox();
+            this.pbxSax = new System.Windows.Forms.PictureBox();
+            this.pbxSten = new System.Windows.Forms.PictureBox();
             this.gbxStenSaxPåse.SuspendLayout();
+            this.gbxMinaResultat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPåse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSten)).BeginInit();
-            this.gbxMinaResultat.SuspendLayout();
             this.SuspendLayout();
             // 
             // gbxStenSaxPåse
@@ -63,36 +62,6 @@
             this.gbxStenSaxPåse.TabIndex = 0;
             this.gbxStenSaxPåse.TabStop = false;
             this.gbxStenSaxPåse.Text = "Sten, sax eller påse";
-            // 
-            // pbxPåse
-            // 
-            this.pbxPåse.Image = ((System.Drawing.Image)(resources.GetObject("pbxPåse.Image")));
-            this.pbxPåse.Location = new System.Drawing.Point(183, 41);
-            this.pbxPåse.Name = "pbxPåse";
-            this.pbxPåse.Size = new System.Drawing.Size(70, 70);
-            this.pbxPåse.TabIndex = 6;
-            this.pbxPåse.TabStop = false;
-            this.pbxPåse.Click += new System.EventHandler(this.pbxPåse_Click);
-            // 
-            // pbxSax
-            // 
-            this.pbxSax.Image = ((System.Drawing.Image)(resources.GetObject("pbxSax.Image")));
-            this.pbxSax.Location = new System.Drawing.Point(97, 41);
-            this.pbxSax.Name = "pbxSax";
-            this.pbxSax.Size = new System.Drawing.Size(70, 70);
-            this.pbxSax.TabIndex = 5;
-            this.pbxSax.TabStop = false;
-            this.pbxSax.Click += new System.EventHandler(this.pbxSax_Click);
-            // 
-            // pbxSten
-            // 
-            this.pbxSten.Image = ((System.Drawing.Image)(resources.GetObject("pbxSten.Image")));
-            this.pbxSten.Location = new System.Drawing.Point(9, 41);
-            this.pbxSten.Name = "pbxSten";
-            this.pbxSten.Size = new System.Drawing.Size(70, 70);
-            this.pbxSten.TabIndex = 4;
-            this.pbxSten.TabStop = false;
-            this.pbxSten.Click += new System.EventHandler(this.pbxSten_Click);
             // 
             // label4
             // 
@@ -153,6 +122,7 @@
             // 
             // btnSpela
             // 
+            this.btnSpela.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSpela.Location = new System.Drawing.Point(327, 28);
             this.btnSpela.Name = "btnSpela";
             this.btnSpela.Size = new System.Drawing.Size(75, 23);
@@ -160,6 +130,42 @@
             this.btnSpela.Text = "Spela";
             this.btnSpela.UseVisualStyleBackColor = true;
             this.btnSpela.Click += new System.EventHandler(this.btnSpela_Click);
+            // 
+            // pbxPåse
+            // 
+            this.pbxPåse.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbxPåse.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxPåse.Image = global::Uppgift_8._3.Properties.Resources.påse;
+            this.pbxPåse.Location = new System.Drawing.Point(183, 41);
+            this.pbxPåse.Name = "pbxPåse";
+            this.pbxPåse.Size = new System.Drawing.Size(70, 70);
+            this.pbxPåse.TabIndex = 6;
+            this.pbxPåse.TabStop = false;
+            this.pbxPåse.Click += new System.EventHandler(this.pbxPåse_Click);
+            // 
+            // pbxSax
+            // 
+            this.pbxSax.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbxSax.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxSax.Image = global::Uppgift_8._3.Properties.Resources.sax;
+            this.pbxSax.Location = new System.Drawing.Point(97, 41);
+            this.pbxSax.Name = "pbxSax";
+            this.pbxSax.Size = new System.Drawing.Size(70, 70);
+            this.pbxSax.TabIndex = 5;
+            this.pbxSax.TabStop = false;
+            this.pbxSax.Click += new System.EventHandler(this.pbxSax_Click);
+            // 
+            // pbxSten
+            // 
+            this.pbxSten.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pbxSten.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbxSten.Image = global::Uppgift_8._3.Properties.Resources.sten;
+            this.pbxSten.Location = new System.Drawing.Point(9, 41);
+            this.pbxSten.Name = "pbxSten";
+            this.pbxSten.Size = new System.Drawing.Size(70, 70);
+            this.pbxSten.TabIndex = 4;
+            this.pbxSten.TabStop = false;
+            this.pbxSten.Click += new System.EventHandler(this.pbxSten_Click);
             // 
             // Form1
             // 
@@ -173,11 +179,11 @@
             this.Text = "X";
             this.gbxStenSaxPåse.ResumeLayout(false);
             this.gbxStenSaxPåse.PerformLayout();
+            this.gbxMinaResultat.ResumeLayout(false);
+            this.gbxMinaResultat.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPåse)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSax)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbxSten)).EndInit();
-            this.gbxMinaResultat.ResumeLayout(false);
-            this.gbxMinaResultat.PerformLayout();
             this.ResumeLayout(false);
 
         }
